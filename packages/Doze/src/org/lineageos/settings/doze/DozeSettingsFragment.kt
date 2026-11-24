@@ -34,7 +34,7 @@ class DozeSettingsFragment :
             AlertDialog.Builder(requireContext())
                 .setTitle(R.string.doze_settings_help_title)
                 .setMessage(R.string.doze_settings_help_text)
-                .setNegativeButton(R.string.dialog_ok) { _, _ ->
+                .setNegativeButton(android.R.string.ok) { _, _ ->
                     prefs.edit().putBoolean("first_help_shown", true).apply()
                 }
                 .show()

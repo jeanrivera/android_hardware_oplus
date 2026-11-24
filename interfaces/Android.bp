@@ -5,8 +5,7 @@ hidl_package_root {
 
 aidl_interface {
     name: "vendor.oplus.hardware.appradioaidl",
-    system_ext_specific: true,
-    vendor_available: true,
+    proprietary: true,
     local_include_dir: "aidl",
     srcs: ["aidl/vendor/oplus/hardware/appradioaidl/*.aidl"],
     stability: "vintf",
@@ -249,8 +248,7 @@ aidl_interface {
 
 aidl_interface {
     name: "vendor.oplus.hardware.communicationcenter",
-    system_ext_specific: true,
-    vendor_available: true,
+    device_specific: true,
     local_include_dir: "aidl",
     srcs: ["aidl/vendor/oplus/hardware/communicationcenter/*.aidl"],
     stability: "vintf",
@@ -333,8 +331,7 @@ aidl_interface {
 
 aidl_interface {
     name: "vendor.oplus.hardware.ims",
-    system_ext_specific: true,
-    vendor_available: true,
+    proprietary: true,
     local_include_dir: "aidl",
     srcs: ["aidl/vendor/oplus/hardware/ims/*.aidl"],
     stability: "vintf",
@@ -663,8 +660,7 @@ aidl_interface {
 
 aidl_interface {
     name: "vendor.oplus.hardware.subsys_imsrtp",
-    system_ext_specific: true,
-    vendor_available: true,
+    device_specific: true,
     local_include_dir: "aidl",
     srcs: ["aidl/vendor/oplus/hardware/subsys_imsrtp/*.aidl"],
     stability: "vintf",
@@ -691,8 +687,7 @@ aidl_interface {
 
 aidl_interface {
     name: "vendor.oplus.hardware.subsys",
-    system_ext_specific: true,
-    odm_available: true,
+    device_specific: true,
     local_include_dir: "aidl",
     srcs: ["aidl/vendor/oplus/hardware/subsys_interface/subsys/*.aidl"],
     stability: "vintf",
@@ -732,8 +727,7 @@ aidl_interface {
 
 aidl_interface {
     name: "vendor.oplus.hardware.subsys_radio",
-    system_ext_specific: true,
-    odm_available: true,
+    device_specific: true,
     local_include_dir: "aidl",
     srcs: ["aidl/vendor/oplus/hardware/subsys_interface/subsys_radio/*.aidl"],
     stability: "vintf",
